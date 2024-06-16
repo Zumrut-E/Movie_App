@@ -1,0 +1,47 @@
+In this task, you’ll define the models for your MongoDB database and write business logic for your API and database using Mongoose.
+
+Directions:
+
+Part 1
+
+First, create the schema for your database using Mongoose models, making sure they can be used by the 
+rest of your application.
+
+Create a new file called “models.js” in your project directory.
+Create the models for your “Movies” schema and “Users” schema using Mongoose. 
+These should be based on the database you defined in the previous 
+Exercise (including attributes, data types, and any other other formatting).
+Export these models from your “models.js” file using module.exports.
+Import your “models.js” file into your main “index.js” file, integrating the models with 
+the rest of your application.
+Part 2
+
+Back in Exercise 2.5, you created request methods to match each of the requirements
+ for your API project (listed below), each with a URL endpoint and request method type:
+
+Return a list of ALL movies to the user
+Return data (description, genre, director, image URL, whether it’s featured or not) 
+about a single movie by title to the user
+Return data about a genre (description) by name/title (e.g., “Thriller”)
+Return data about a director (bio, birth year, death year) by name
+Allow new users to register
+Allow users to update their user info (username, password, email, date of birth)
+Allow users to add a movie to their list of favorites
+Allow users to remove a movie from their list of favorites
+Allow existing users to deregister
+In your “documentation.html” file, you documented what each method would do,
+ what type of data it would take, and what type of data it would send back as a response. 
+ At the time, this was pretty hypothetical, given that you didn’t yet have the underlying 
+ database or models in place. Now, however, you have your Mongoose models, so you can update this documentation.
+
+First, using your “Users” and “Movies” models, fill in each request method with 
+the Mongoose logic you just wrote to make the request methods functional.
+As you do so, be sure to update your documentation with more accurate information 
+about the format of the data (if any), the method that’s expected in its body (with an example), 
+and what data the method will be sending back as a response (with an example).
+For example, a method to update user info would be expecting a JSON object with 
+data about what data in the user document should be updated.
+After you implement each method, test it in Postman with sample data and share a screenshot of the result.
+Push your changes to GitHub.
+Submit a link to your project directory (including your “documentation.html” file) and Postman 
+screenshots (in a zip file) here for review.
