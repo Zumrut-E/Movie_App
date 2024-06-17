@@ -8,7 +8,7 @@ const auth = require('./auth');
 const app = express();
 const port = 3000;
 
-mongoose.connect('mongodb://localhost:27017/movieDatabase');
+mongoose.connect('mongodb://localhost:27017/movies_app');
 
 app.use(express.json());
 app.use(passport.initialize());
